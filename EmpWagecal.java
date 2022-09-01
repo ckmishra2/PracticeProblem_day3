@@ -8,7 +8,10 @@ public class EmpWagecal {
     	int empHrs = 0;
     	int empWage = 0;
     	int totalempWage = 0;
-    	for(int day=0; day<=20; day++) {
+		int totalHrs = 0;
+		int day = 1;
+    	while(day <= 20 && totalHrs<=100) {
+		day++;
     	int empcheck = (int) Math.floor(Math.random() * 10)% 3;
     	switch (empcheck) {
     	case 1:
@@ -20,7 +23,7 @@ public class EmpWagecal {
     	default:
     		empHrs = 0;
     	}
-    	
+    	totalHrs = totalHrs+empHrs;
     	
     	empWage = empHrs*empRatePH;
     	totalempWage += empWage;
@@ -32,8 +35,8 @@ public class EmpWagecal {
 
       
     }
-
+}
 
 	
-}
+
 

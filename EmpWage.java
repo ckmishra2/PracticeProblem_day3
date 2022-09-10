@@ -13,7 +13,7 @@ class Company{
 		this.workHrsPM=wghrspm;
 	}
 	
-}	
+}
 	public class EmpWage {
 		 static final int Fulltime=1;
 		 static final int  Parttime=2;
@@ -33,7 +33,7 @@ class Company{
 			int workhoursPM = sc.nextInt();
 			
 			Company comp1 = new Company(companyName, wph, workdaysPM , workhoursPM);
-			EmpWage emp = new EmpWage(comp1);             // creating object variable of class EmpWage
+			EmpWage emp = new EmpWage(comp1);             // creating object variable of class EmpWage 
 			emp.compute();                        //calling method compute
 		}
 		public void compute(){
@@ -66,7 +66,7 @@ class Company{
 					System.out.print("Employee is absent and ");
 				} 
 				salary+= WagePerHour*DayHour;
-				System.out.println("his day "+day+" income is Rs."+salary);
+				System.out.println("his day "+day+" income is Rs."+ salary);
 				TotalWorkingHour+= DayHour;
 				TotalMonthlySalary+= salary;
 
